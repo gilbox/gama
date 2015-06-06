@@ -39,4 +39,8 @@ describe('Matrix', function()
   it('rotate', function() {
     assert.deepEqual([1, 0, 0, 0, 1, 0, 0, 0, 1], gama.rotateMatrix(0, gama.EmptyMatrix()));
   });
+
+  it('invertMatrix', function () {
+    assert.deepEqual([7,-3,-3,-1,1,0,-1,0,1], gama.invertMatrix([1,3,3,1,4,3,1,3,4]))
+  });
 });
